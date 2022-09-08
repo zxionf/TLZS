@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:id="@+id/mainachievementLinearLayout2"
+			android:layout_centerVertical="true">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="成就"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:id="@+id/mainachievementTextView1"
+				android:fontFamily="@font/ac"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="#/#"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/mainachievementTextView2"/>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="40dp"
+			android:text="BACK"
+			android:layout_alignParentRight="true"
+			android:onClick="onBackClick"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent">
+
+		<ScrollView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:fillViewport="true">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center|center_vertical"
+				android:onClick="onAcbgClick">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="特殊"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/mainachievementTextView3"
+					android:gravity="center"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="彩蛋"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/mainachievementTextView4"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:id="@+id/mainachievementLinearLayout1">
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"/>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/activitymainImageView1"/>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/activitymainRelativeLayout1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:orientation="vertical"
+			android:id="@+id/activitymainLinearLayout1">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="推理之时"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textSize="85sp"
+				android:textColor="#FFFFFFFF"
+				android:shadowRadius="40"
+				android:shadowColor="#FF000000"
+				android:padding="17dp"/>
+
+			<ViewFlipper
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:flipInterval="2000"
+				android:id="@+id/activitymainViewFlipper1">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="aaaaaaaaa"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="bbbbbbbbb"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="ccccccccc"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="ddddddd"/>
+
+			</ViewFlipper>
+
+			<View
+				android:background="?android:attr/dividerHorizontal"
+				android:layout_width="1dp"
+				android:layout_height="40dp"
+				android:alpha="0"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="onEnterClick">
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="#FF000000"/>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="50dp"
+					android:gravity="center">
+
+					<View
+						android:layout_width="1dp"
+						android:layout_height="match_parent"
+						android:background="#FF000000"/>
+
+					<View
+						android:background="?android:attr/dividerHorizontal"
+						android:layout_width="100dp"
+						android:layout_height="1dp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="点击这里开始"
+						android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+					<View
+						android:background="?android:attr/dividerVertical"
+						android:layout_width="100dp"
+						android:layout_height="1dp"/>
+
+					<View
+						android:layout_width="1dp"
+						android:layout_height="match_parent"
+						android:background="#FF000000"/>
+
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="#FF000000"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:id="@+id/activitymainLinearLayout2"
+			android:paddingRight="20dp">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/chart_donut">
+
+				<View
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:onClick="onAcClick"
+					android:background="?android:attr/selectableItemBackground"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/cog">
+
+				<View
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:background="?android:attr/selectableItemBackground"
+					android:onClick="onSettingClick"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="20dp"
+			android:background="@drawable/information_outline"
+			android:id="@+id/activitymainLinearLayout3">
+
+			<View
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:onClick="onMainAboutClick"
+				android:textSize="33sp"
+				android:background="?android:attr/selectableItemBackground"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:textSize="8sp"
+			android:gravity="bottom"
+			android:textColor="#FF000000"
+			android:id="@+id/activitymainTextView1"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+
