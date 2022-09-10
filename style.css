@@ -143,3 +143,24 @@ pre code{display:block;box-shadow:none}
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 520px) {
+
+  header{
+
+    margin-left: 10px;
+
+  }
+
+  main{
+
+    padding: 10px;
+
+  }
+
+  footer{
+
+    margin: 15px
+
+  }
+
+}
