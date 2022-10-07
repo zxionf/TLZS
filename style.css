@@ -1,4 +1,17 @@
 
+.btn {
+  display: inline-block;
+  background:#000000;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
 .inline{
   display: inline;
 }
@@ -79,6 +92,9 @@ main{
   border-bottom:1px solid #111;
   
 }
+.bug{
+  width: 920px;
+}
 
 code
 {
@@ -130,37 +146,17 @@ pre{color:#222;background-color:#fff;font-family:Monaco, "Bitstream Vera Sans Mo
 pre{padding:10px;box-shadow:0 0 20px rgba(0,0,0,0.06);overflow:auto}
 pre code{display:block;box-shadow:none}
 
-.btn {
-  display: inline-block;
-  background:#000000;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #f9f6f2;
-  height: 40px;
-  line-height: 42px;
-  display: block;
-  text-align: center;
-  margin-bottom: 10px;
-}
 @media screen and (max-width: 520px) {
-
   header{
-
     margin-left: 10px;
-
   }
-
   main{
-
     padding: 10px;
-
   }
-
   footer{
-
     margin: 15px
-
   }
-
+  .bug{
+    width:300px;
+  }
 }
