@@ -16,19 +16,23 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 public class Lv0gdx implements ApplicationListener
 {
     
-    
+    //加载相机
     OrthographicCamera camera,cam;
     
-
+    //字体
     BitmapFont font;
+    //笔刷
     Batch batch;
     
-    
+    //音乐
     Music music;
+    //菜单
     mMenu e;
+    //按钮
     ctrBtn e2;
+    //文本编辑框
     mEditText edittext;
-    
+    //游戏舞台
     GameStage gamestage;
     
     
@@ -37,15 +41,17 @@ public class Lv0gdx implements ApplicationListener
     public void create()
     {
 
+        //加载字体
         mFont.load();
-        
+        //FONT
+        font = new BitmapFont(Gdx.files.internal("font/font-cn.fnt"),Gdx.files.internal("font/font-cn.png"),false);
+        //font.setScale(0.5f);
+
         //BGM
         //music = Gdx.audio.newMusic(Gdx.files.internal("are_you_lost.mp3"));
         //music.play();
         
-        //FONT
-        font = new BitmapFont(Gdx.files.internal("font/font-cn.fnt"),Gdx.files.internal("font/font-cn.png"),false);
-        //font.setScale(0.5f);
+        
         
         batch = new SpriteBatch();
 
